@@ -4,6 +4,7 @@ RSpec.describe MrSorty do
   end
 
   it "does something useful" do
-    expect(false).to eq(true)
+    sort = HeapsortMin::HeapsortMin.new [1, 2, 3]
+    expect(sort.return_heap).to eq([0, 0, 0])
   end
 end
